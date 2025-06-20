@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none;
+      text-decoration: none;
+    }
+
+    body {
+      background-color: rgb(153, 177, 197);
+    }
+
+    #navbar {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      position: fixed;
+      background-color: rgb(2, 2, 2, 0.4);
+      box-shadow: 0 5px;
+      padding-top: 20px;
+      height: 50px;
+    }
+
+    #navbar h1 {
+      box-shadow: 0px 3px;
+    }
+
+    main {
+      height: 900px;
+      display: flex;
+    }
+
+    .spacer{
+      height: 100px;
+    }
+
+    #container {
+      background-image: url('images/picture.jpg');
+      border-bottom: solid;
+      background-size: cover;
+      margin-left: 30px;
+      background-repeat: no-repeat;
+      border-radius: 30px;
+      display: flex;
+      width: 1140px;
+      height: 700px;
+      gap: 15px;
+    }
+
+    /* new css  */
+    .sub {
+    font-weight: bolder;
+    margin-left: 200px;
+  
+}
+
+.sub {
+    animation: slideUp 1s ease-out forwards;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+/* Animation keyframes */
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+    .sub {
+      z-index: 50px;
+      border-radius: 30px;
+      width: 700px;
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+
+    .sub h2 {
+      padding-top: 10px;
+      font-size: 40px;
+      font-weight: bolder;
+      margin-left: 140px;
+    }
+
+    p {
+      font-weight: bold;
+      margin-left: 80px;
+      margin-top: 20px;
+    }
+
+    .sub2 {
+      width: 800px;
+      margin-top: 96px;
+      border-radius: 30px;
+    }
+
+    input {
+      height: 30px;
+      width: 500px;
+      padding: 5px;
+      border-radius: 10px;
+      margin-left: 50px;
+    }
+
+    #text {
+      height: 100px;
+      width: 500px;
+      border-radius: 10px;
+      margin-left: 50px;
+    }
+
+    #submit {
+      background-color: rgb(183, 133, 133);
+      margin-top: 15px;
+      height: 50px;
+      width: 200px;
+      border-radius: 10px;
+      margin-left: 200px;
+    }
+
+    #submit:hover {
+      background-color: rgba(221, 183, 133, 0.6);
+      margin-top: 10px;
+      height: 45px;
+    }
+
+    h3 {
+      margin-left: 50px;
+      padding: 10px;
+    }
+
+    .sub span {
+      margin-top: 30px;
+      display: flex;
+    }
+
+    .sub h3 {
+      padding-top: 20px;
+    }
+
+    .sub img {
+      height: 100px;
+      width: 30px;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .sub img:hover {
+      transform: rotate(45deg);
+    }
+
+    #media {
+      display: flex;
+      margin-left: 40px;
+      margin-top: 40px;
+      border-radius: 10px;
+      width: 270px;
+      height: 70px;
+    }
+
+    #media img {
+      height: 50px;
+      width: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+      
+      body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      main {
+        height: 1450px;
+      }
+
+      #container {
+        background-image: url('images/picture.jpg');
+        border-bottom: solid;
+       background-size: cover;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 70px;
+        width: 500px;
+        height: 190vh;
+        padding: 10px;
+      }
+
+      input,
+      #text {
+        width: 50%;
+        margin-left: 40px;
+      }
+
+      #submit {
+        width: 30%;
+        margin-left: 15%;
+      }
+
+      .sub h2 {
+        font-size: 26px;
+      }
+
+      #navbar h1 {
+        font-size: 18px;
+      }
+
+      .sub img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav id="navbar">
+    <h1>This is registration form</h1>
+  </nav>
+  <div class="spacer">
+
+  </div>
+  <main>
+  
+    <div id="container">
+      <div class="sub">
+        <h2>Contact Us</h2>
+        <p> Send the Message we will response you soon</p>
+        <span>
+          <img src="images/gmail.png">
+          <div>
+            <h3> Email</h3>
+            <p> jokhioabduljalil41@gmail.com</p>
+          </div>
+        </span>
+
+        <span>
+          <img src="images/phone.png" alt="">
+          <div class="information">
+            <h3> Phone</h3>
+            <p> +92 03312172409</p>
+          </div>
+        </span>
+        <span>
+          <img src="images/location.png">
+          <div class="information">
+            <h3> Office Address </h3>
+            <p> Tauheed Commercial area Defence Karachi</p>
+          </div>
+        </span>
+
+        <div id="media">
+          <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"></a>
+          <a href="https://www.linkedin.com/in/abdul-jalil-jokhio-0a25982a5" target="_blank"><img
+              src="images/linkedin.png"></a>
+
+        </div>
+      </div>
+
+      <div class="sub2">
+        <table class="registration">
+
+          <form id="contactForm" method="get">
+            <h3>Your Name</h3>
+            <input type="text" id="name" placeholder="Enter Your name" required>
+            <h3>Your E-mail</h3>
+            <input type="text" id="email" placeholder="Enter your E-mail " required>
+            <h3> Your Phone no</h3>
+            <input type="text" id="phone" placeholder="Enter your Phone no " required>
+            <h3>password</h3>
+            <input type="password" id="password" placeholder="Enter the password" required>
+            <h3> Message</h3>
+            <input type="text" id="text" placeholder="Write the short message here " required>
+            <button id="submit"><b>Submit</b></button>
+          </form>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("submit").addEventListener("click", function (event) {
+      event.preventDefault();
+
+      let submit = false;
+
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let phone = document.getElementById("phone").value;
+      let message = document.getElementById("text").value;
+
+
+      alert("Form submitted!\nName: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nMessage: " + message);
+
+      document.getElementById("contactForm").submit();
+    });
+  </script>
+</body>
+
+</html>
